@@ -1,0 +1,20 @@
+[package]
+name = "guest"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "guest"
+path = "./src/lib.rs"
+
+[features]
+guest = []
+
+[dependencies]
+k256 = { version = "0.13.3", default-features = false, features = [
+    "arithmetic",
+    "pkcs8",
+    "precomputed-tables",
+    "schnorr",
+] }
+jolt = { package = "jolt-sdk", git = "https://github.com/a16z/jolt" }
