@@ -11,6 +11,5 @@ path = "./src/lib.rs"
 guest = []
 
 [dependencies]
-k256 = { version = "0.13.3", default-features = false, features = ["schnorr"] }
 jolt = { package = "jolt-sdk", git = "https://github.com/a16z/jolt" }
-# rsa = { version = "0.9.6", default-features = false, features = ["sha2"] }
+rsa = { version = "0.9.6", default-features = false, features = ["sha2"] }

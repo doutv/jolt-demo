@@ -16,10 +16,8 @@ jolt = { package = "jolt-sdk", git = "https://github.com/a16z/jolt", features = 
     "std",
 ] }
 guest = { path = "./guest" }
-k256 = "0.13.3"
 rand_core = "0.6.4"
-# rsa = { version = "0.9.6", default-features = false, features = ["sha2"] }
-# rand = "0.8.5"
+rsa = { version = "0.9.6", default-features = false, features = ["sha2"] }
 
 [patch.crates-io]
 ark-ff = { git = "https://github.com/a16z/arkworks-algebra", branch = "optimize/field-from-u64" }
